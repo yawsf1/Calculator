@@ -84,3 +84,19 @@ equal.onclick = () => {
         result.textContent = "erreur!";
     }
 };
+let details = document.querySelector("#details");
+
+let contents = document.querySelector(".contents");
+let list = document.querySelector(".contents ul");
+let listel = document.querySelectorAll(".contents ul li");
+details.onclick = function(){
+    if(window.innerWidth <= 852){
+        if(contents.style.display !== "flex"){
+            contents.style.display = "flex";
+        }
+        else{
+            contents.style.display = "none";
+
+        }
+    }
+}
