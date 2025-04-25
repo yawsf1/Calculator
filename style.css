@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-size: 1rem;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background: linear-gradient(to right bottom, black, #555);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+}
+
+.calname {
+    width: 50%;
+    padding-left: 30px;
+    
+}
+.calname h1{
+    font-size: 1.9rem;
+    font-family: "Boldonse", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+
+}
+
+.calname h1 span {
+    font-size: 1.9rem;
+    color: #4C6A92;
+}
+
+.navbar1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.navbar1 ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar1 li {
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0px 10px;
+    transition: color 0.6s;
+}
+.navbar1 li:hover{
+    color: #4C6A92;
+}
+.navbar1 i{
+    margin-right: 5px;
+}
+
+
+
+
+
+
+.main1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    width: min(35%, 400px);
+    height: min(80vh, 600px);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.operation, .results {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10px;
+}
+.operation h1, .results h1{
+    font-size: 2.5rem;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 140px);
+    gap: 10px;
+}
+
+.slice1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.buttons {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons:hover {
+    background-color: #888;
+}
+
+.btnname {
+    font-size: 1.2rem;
+    color: #333;
+}
+#mc{
+    background-color: #db5458;
+}
+#mc:hover{
+    background-color: #d13439;
+}
+#c{
+    background-color: #8d1f23;
+}
+#c:hover{
+    background-color: #5e0e11;
+}
+#c .btnname{
+    color: beige;
+}
+#equal {
+    background-color: #4CAF50;
+}
+
+#equal:hover {
+    background-color: #348538;
+}
+
+#equal .btnname {
+    color: #fff;
+}
+
+@media (max-height: 600px) {
+    .calculator {
+        height: 90vh;
+    }
+    
+    .operation, .results {
+        height: 50px;
+    }
+    
+    .btnname {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 90%;
+    }
+    
+    .navbar1 ul {
+        gap: 10px;
+    }
+    
+    .calname {
+        padding-left: 15px;
+    }
+}
+
+
