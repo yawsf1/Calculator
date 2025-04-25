@@ -23,7 +23,7 @@ Currently, it supports simple mathematical operations like addition, subtraction
 - JavaScript
 
 ## 📷 Preview
-![App Preview](fg.png)
+![App Preview](fg.PNG)
 
 ## 📄 License
 This project is licensed under the MIT License.
